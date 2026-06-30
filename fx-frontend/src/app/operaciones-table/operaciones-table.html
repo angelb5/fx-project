@@ -1,0 +1,21 @@
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Cambiar estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let operacion of operacions">
+        <td>{{ operacion.id }}</td>
+        <!-- Action Buttons Cell -->
+        <td>
+          <div>
+            <button class="btn btn-edit" (click)="onEdit(operacion)">Cambiar estado</button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
